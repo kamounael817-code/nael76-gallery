@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nael76 - Galerie d'Art Numérique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Nael76</div>
+            <ul class="nav-links">
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Créations Numériques à Posséder</h1>
+            <p>Pièces originales générées par IA · Éditions limitées · Livraison immédiate en haute résolution</p>
+        </div>
+    </section>
+
+    <section id="galerie" class="galerie">
+        <h2>Galerie - 6 Œuvres Disponibles</h2>
+        <div class="galerie-grid">
+            <!-- Œuvre 1 -->
+            <div class="œuvre-card">
+                <img src="https://via.placeholder.com/400x300?text=Essayer+Fait+Acheter" alt="Essayer Fait Acheter">
+                <div class="card-content">
+                    <h3>Essayer Fait Acheter</h3>
+                    <p>Illustration abstraite générée par IA. Exploration des couleurs vives et des formes géométriques. Représente le moment où la curiosité devient possession. Édition limitée à 50 exemplaires.</p>
+                    <p class="details">Technique : IA générative (Midjourney) · Format : 4K (3840x2160) · Année : 2026 · Édition : 50/50</p>
+                    <p class="price">15 €</p>
+                    <button class="btn-acheter" onclick="acheter('Essayer Fait Acheter', 15)">Acheter</button>
+                </div>
+            </div>
+
+            <!-- Œuvre 2 -->
+            <div class="œuvre-card">
+                <img src="https://via.placeholder.com/400x300?text=Vée+Lumineuse" alt="Vée Lumineuse">
+                <div class="card-content">
+                    <h3>Vée Lumineuse</h3>
+                    <p>Portrait surréaliste créé par IA. Une silhouette stylisée baignée dans une lumière ultraviolette hypnotisante. La lettre Vée devient symbole de victoire et de transformation numérique. Édition limitée à 40 exemplaires.</p>
+                    <p class="details">Technique : IA générative (Stable Diffusion + retouche) · Format : 4K (3840x2160) · Année : 2026 · Édition : 40/40</p>
+                    <p class="price">20 €</p>
+                    <button class="btn-acheter" onclick="acheter('Vée Lumineuse', 20)">Acheter</button>
+                </div>
+            </div>
+
+            <!-- Œuvre 3 -->
+            <div class="œuvre-card">
+                <img src="https://via.placeholder.com/400x300?text=Cybernétique+Rêve" alt="Cybernétique Rêve">
+                <div class="card-content">
+                    <h3>Cybernétique Rêve</h3>
+                    <p>Fusion poétique entre technologie et rêverie. Générée par IA, cette œuvre présente des circuits lumineux entrelacés avec des éléments organiques flottants. Une méditation sur l'harmonie entre l'humain et la machine. Édition limitée à 30 exemplaires.</p>
+                    <p class="details">Technique : IA générative (DALL-E 3) · Format : 8K (7680x4320) · Année : 2026 · Édition : 30/30</p>
+                    <p class="price">35 €</p>
+                    <button class="btn-acheter" onclick="acheter('Cybernétique Rêve', 35)">Acheter</button>
+                </div>
+            </div>
+
+            <!-- Œuvre 4 -->
+            <div class="œuvre-card">
+                <img src="https://via.placeholder.com/400x300?text=Nébulose+Digitale" alt="Nébulose Digitale">
+                <div class="card-content">
+                    <h3>Nébulose Digitale</h3>
+                    <p>Paysage cosmique créé par intelligence artificielle. Des particules lumineuses dansent dans l'infini, formant des motifs fractals hypnotisants. Idéale pour les amateurs de science-fiction et de beauté abstraite. Édition limitée à 25 exemplaires.</p>
+                    <p class="details">Technique : IA générative (Midjourney) + post-production · Format : 4K (3840x2160) · Année : 2026 · Édition : 25/25</p>
+                    <p class="price">28 €</p>
+                    <button class="btn-acheter" onclick="acheter('Nébulose Digitale', 28)">Acheter</button>
+                </div>
+            </div>
+
+            <!-- Œuvre 5 -->
+            <div class="œuvre-card">
+                <img src="https://via.placeholder.com/400x300?text=Écho+Synthétique" alt="Écho Synthétique">
+                <div class="card-content">
+                    <h3>Écho Synthétique</h3>
+                    <p>Portrait de synthèse générée par IA. Jouant avec les reflets et les transparences, cette œuvre capture l'essence de l'identité numérique. Les couches se superposent comme des échos visuels dans un univers virtuel. Édition limitée à 50 exemplaires.</p>
+                    <p class="details">Technique : IA générative (Stable Diffusion XL) · Format : 4K (3840x2160) · Année : 2026 · Édition : 50/50</p>
+                    <p class="price">18 €</p>
+                    <button class="btn-acheter" onclick="acheter('Écho Synthétique', 18)">Acheter</button>
+                </div>
+            </div>
+
+            <!-- Œuvre 6 -->
+            <div class="œuvre-card">
+                <img src="https://via.placeholder.com/400x300?text=Harmonie+Algorithmique" alt="Harmonie Algorithmique">
+                <div class="card-content">
+                    <h3>Harmonie Algorithmique</h3>
+                    <p>Composition abstraite générée par IA basée sur des motifs musicaux traduits visuellement. Chaque couleur représente une note, chaque forme une mélodie invisible. Une célébration de la convergence entre l'art et l'algorithmie. Édition limitée à 35 exemplaires.</p>
+                    <p class="details">Technique : IA générative (Midjourney) · Format : 4K (3840x2160) · Année : 2026 · Édition : 35/35</p>
+                    <p class="price">25 €</p>
+                    <button class="btn-acheter" onclick="acheter('Harmonie Algorithmique', 25)">Acheter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos" class="apropos">
+        <h2>À Propos</h2>
+        <div class="apropos-content">
+            <h3>Nael76 - Créateur d'Art Numérique</h3>
+            <p>Bienvenue dans mon univers créatif. Je suis un artiste numérique spécialisé dans la création d'œuvres générées par intelligence artificielle. Mon parcours combine l'exploration des technologies émergentes avec une sensibilité artistique profonde.</p>
+            
+            <h4>Mon Style & Mes Outils</h4>
+            <p>Je travaille principalement avec des modèles d'IA générative tels que <strong>Midjourney</strong>, <strong>Stable Diffusion</strong>, et <strong>DALL-E 3</strong>. Ces outils me permettent de créer des mondes visuels surréalistes et captivants, souvent caractérisés par :</p>
+            <ul>
+                <li>Des palettes de couleurs audacieuses et harmonieuses</li>
+                <li>Des compositions abstraites et conceptuelles</li>
+                <li>Une fusion entre technologie et poésie visuelle</li>
+                <li>Des éditions limitées garantissant l'exclusivité</li>
+            </ul>
+            
+            <h4>Ce Qui Rend Mon Travail Unique</h4>
+            <p>Chaque création est le fruit d'un processus itératif où je guide l'IA en fonction de ma vision artistique. Ce n'est pas une simple génération aléatoire : c'est une collaboration entre l'humain et la machine, où l'intention créative prime. Mes œuvres explorent les frontières entre le réel et le virtuel, offrant aux collectionneurs numériques des pièces authentiques et inédites.</p>
+            
+            <p><strong>Basé en France · Livraison numérique immédiate · Paiement sécurisé via PayPal</strong></p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-form">
+            <form onsubmit="envoyerMessage(event)">
+                <input type="text" placeholder="Ton nom" required>
+                <input type="email" placeholder="Ton email" required>
+                <textarea placeholder="Ton message" rows="5" required></textarea>
+                <button type="submit" class="btn-envoyer">Envoyer</button>
+            </form>
+            <p class="contact-email">Ou contacte-moi directement : nael76@exemple.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Nael76 — Tous droits réservés</p>
+        <p>Art numérique · Éditions limitées · Livraison immédiate</p>
+        <p>nael76@exemple.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
